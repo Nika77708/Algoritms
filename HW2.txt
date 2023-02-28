@@ -1,0 +1,11 @@
+function Hanoi1(n, x, y, z)                       
+{
+   if(n <= 0)                                     
+      return;
+ 
+   Hanoi1(n-1, x,z,y);                            
+   document.write(x+'->'+y+", ");                 
+   Hanoi1(n-1, z,y,x);                            
+ 
+   return;                                        
+}
